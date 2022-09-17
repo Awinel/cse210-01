@@ -31,7 +31,40 @@ def main():
     clear()
     print("|1|2|3|\n|4|5|6|\n|7|8|9|")
 
+def board(display_board):
 
+    default_board = """
+|1|2|3|
+|4|5|6|
+|7|8|9|
+"""
+    for i in range(1, 10):
+        if (display_board[i] == "X" or display_board[i] == "O"):
+            default_board = default_board.replace(str(i), display_board[i])
+
+        else:
+            default_board = default_board.replace(str(i), " ")
+        print(default_board)
+
+def place_marker (display_board, marker, position):
+
+    display_board[position] = marker
+
+    return display_board
+
+def space_check()
+
+def player_choise()
+
+def full_board_check()
+
+def winner_check_x()
+
+def winner_check_o()
+
+def draw_check()
+
+def play_again()
 
 if __name__ == "__main__":
     main()
