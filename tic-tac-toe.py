@@ -32,7 +32,7 @@ def main():
     print("|1|2|3|\n|4|5|6|\n|7|8|9|")
 
     display_board = ["#"] * 10
-    
+
     while True: 
         
         game_starts = full_board_check(display_board)
@@ -91,7 +91,7 @@ def board(display_board):
 
         else:
             default_board = default_board.replace(str(i), " ")
-        print(default_board)
+    print(default_board)
 
 def place_marker (display_board, marker, position):
 
