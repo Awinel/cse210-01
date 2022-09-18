@@ -31,7 +31,8 @@ def main():
     clear()
     print("|1|2|3|\n|4|5|6|\n|7|8|9|")
 
-
+    display_board = ["#"] * 10
+    
     while True: 
         
         game_starts = full_board_check(display_board)
